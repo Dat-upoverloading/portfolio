@@ -1,61 +1,117 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  background-color: #1a1a1a; /* Dark background */
-  color: #f4f4f4; /* Light text color */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-header {
-  background-color: #333;
-  color: white;
-  padding: 20px;
+/* Bố cục tổng thể */
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.button {
-  background-color: #007bff; /* Button color */
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin: 10px;
+/* Cột bên trái */
+.sidebar {
+    width: 30%;
+    background: #1b3551;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-.about {
-  padding: 20px;
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
-.avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-top: 10px;
+.profile h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
-.projects {
-  padding: 20px;
+.profile span {
+    color: #2ca6e0;
 }
 
-.project-card {
-  display: inline-block;
-  width: 300px;
-  background: #2c2c2c; /* Darker card background */
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+.profile h2 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 20px;
 }
 
-.project-card img {
-  width: 100%;
-  border-radius: 10px;
+.sidebar h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  margin-top: 20px;
+.sidebar p,
+.sidebar ul {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
 
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    padding: 5px 0;
+}
+
+/* Cột bên phải */
+.content {
+    width: 70%;
+    padding: 20px;
+}
+
+.content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #1b3551;
+    padding-bottom: 5px;
+}
+
+.content p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.experience .job {
+    margin-bottom: 20px;
+}
+
+.experience h4 {
+    font-size: 16px;
+    color: #1b3551;
+}
+
+.experience ul {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.experience ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.experience ul li::before {
+    content: "•";
+    position: absolute;
+    left: -12px;
+    color: #1b3551;
+}
